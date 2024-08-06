@@ -1,1 +1,75 @@
-/* You can add global styles to this file, and also import other style files */
+@import "@ng-select/ng-select/themes/default.theme.css";
+
+html,
+body {
+    height: 100%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset {
+    padding: 15px;
+    border-color: rgb(211 211 211 / 35%)
+}
+
+legend {
+    color: rgb(168, 168, 168);
+}
+
+.m-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    padding: 50px;
+    min-height: calc(100vh);
+    background: linear-gradient(to bottom, #a8d5ba, #6b8f71);
+}
+
+.mat-mdc-form-field-subscript-wrapper {
+    display: none;
+}
+
+app-single-input, app-single-select-input, mat-form-field {
+    @media (max-width: 767px) {
+        width: 100%;
+    }
+}
+
+.success {
+    .mdc-snackbar__surface {
+        background-color: green!important;
+    }
+}
+  
+.warn {
+    .mdc-snackbar__surface {
+        background-color: red!important;
+    }
+}
+
+.ng-select.ng-select-single .ng-select-container {
+    height: 56px!important;
+}
+
+.ng-input {
+    height: 90%;
+    input {
+        height: 100%; 
+    }
+}
+

@@ -1,0 +1,11 @@
+<mat-form-field class="input" appearance="fill">
+    <mat-label>{{ label }}</mat-label>
+      <ng-container>
+        <input
+         matInput
+         [formControl]="control"
+         [type]="type"
+         [placeholder]="placeholder"
+        >
+      </ng-container>
+</mat-form-field>
